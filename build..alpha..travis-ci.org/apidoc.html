@@ -1,0 +1,183 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/filipedeschamps/rss-feed-emitter#readme"
+
+    >rss-feed-emitter (v1.0.6)</a>
+</h1>
+<h4>Super RSS News Feed aggregator written in Node.js and ES6</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.rss-feed-emitter">module rss-feed-emitter</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.rss-feed-emitter.rss-feed-emitter">
+            function <span class="apidocSignatureSpan"></span>rss-feed-emitter
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.rss-feed-emitter.toString">
+            function <span class="apidocSignatureSpan">rss-feed-emitter.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.rss-feed-emitter.toString">module rss-feed-emitter.toString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.rss-feed-emitter.toString.toString">
+            function <span class="apidocSignatureSpan">rss-feed-emitter.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.rss-feed-emitter" id="apidoc.module.rss-feed-emitter">module rss-feed-emitter</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.rss-feed-emitter.rss-feed-emitter" id="apidoc.element.rss-feed-emitter.rss-feed-emitter">
+        function <span class="apidocSignatureSpan"></span>rss-feed-emitter
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function RssFeedEmitter() {
+  var options = arguments.length &#x3c;= 0 || arguments[0] === undefined ? {} : arguments[0];
+
+  _classCallCheck(this, RssFeedEmitter);
+
+  // Also, we are creating a blank array to keep all
+  // our feed objects.
+  var _this = _possibleConstructorReturn(this, (RssFeedEmitter.__proto__ || Object.getPrototypeOf(RssFeedEmitter)).call(this));
+
+  // Since this is a &#x22;Class&#x22;, you have to call #super method
+  // for the parent class initialize it&#x27;s internals.
+
+
+  _this._feedList = [];
+
+  // If the user has specified a User Agent
+  // we will use that as the &#x27;user-agent&#x27; header when
+  // making requests, otherwise we use the default option.
+  _this._userAgent = options.userAgent || &#x27;Node/RssFeedEmitter (https://github.com/filipedeschamps/rss-feed-emitter)&#x27;;
+
+  // This module manages automatically how many feed items
+  // it will keep in memory, and basically it will have a
+  // maximum history which is how many items the feed has
+  // multiplied by this number below. So, if the feed have
+  // 10 items, we will keep 30 items max in the history.
+  _this._historyLengthMultiplier = 3;
+
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.rss-feed-emitter.toString" id="apidoc.element.rss-feed-emitter.toString">
+        function <span class="apidocSignatureSpan">rss-feed-emitter.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.rss-feed-emitter.toString" id="apidoc.module.rss-feed-emitter.toString">module rss-feed-emitter.toString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.rss-feed-emitter.toString.toString" id="apidoc.element.rss-feed-emitter.toString.toString">
+        function <span class="apidocSignatureSpan">rss-feed-emitter.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
