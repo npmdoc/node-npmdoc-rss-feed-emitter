@@ -1,1 +1,39 @@
-{     "devDependencies": {         "rss-feed-emitter": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmdoc-rss-feed-emitter",     "homepage": "https://github.com/npmdoc/node-npmdoc-rss-feed-emitter",     "repository": {         "type": "git",         "url": "https://github.com/npmdoc/node-npmdoc-rss-feed-emitter.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "api documentation for  [rss-feed-emitter (v1.0.6)](https://github.com/filipedeschamps/rss-feed-emitter#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-rss-feed-emitter.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-rss-feed-emitter) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-rss-feed-emitter.svg)](https://travis-ci.org/npmdoc/node-npmdoc-rss-feed-emitter)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "rss-feed-emitter": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-rss-feed-emitter",
+    "keywords": [
+        "documentation",
+        "rss-feed-emitter"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_rss_feed_emitter.js",
+    "name": "npmdoc-rss-feed-emitter",
+    "nameAlias": "npmdoc_rss_feed_emitter",
+    "nameOriginal": "npmdoc-rss-feed-emitter",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-rss-feed-emitter.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.2"
+}
