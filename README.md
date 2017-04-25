@@ -1,6 +1,7 @@
 # npmdoc-rss-feed-emitter
 
-api documentation for  [rss-feed-emitter (v1.0.6)](https://github.com/filipedeschamps/rss-feed-emitter#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-rss-feed-emitter.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-rss-feed-emitter) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-rss-feed-emitter.svg)](https://travis-ci.org/npmdoc/node-npmdoc-rss-feed-emitter)
+#### basic api documentation for  [rss-feed-emitter (v1.0.6)](https://github.com/filipedeschamps/rss-feed-emitter#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-rss-feed-emitter.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-rss-feed-emitter) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-rss-feed-emitter.svg)](https://travis-ci.org/npmdoc/node-npmdoc-rss-feed-emitter)
+
 #### Super RSS News Feed aggregator written in Node.js and ES6
 
 [![NPM](https://nodei.co/npm/rss-feed-emitter.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/rss-feed-emitter)
@@ -86,7 +87,8 @@ api documentation for  [rss-feed-emitter (v1.0.6)](https://github.com/filipedesc
         "test-unit": "mocha --compilers js:babel-core/register test/unit/**/*.spec.js",
         "test-unit-watch": "mocha --watch --compilers js:babel-core/register test/unit/**/*.spec.js"
     },
-    "version": "1.0.6"
+    "version": "1.0.6",
+    "bin": {}
 }
 ```
 
